@@ -5,3 +5,19 @@
 h1 {
     font-family: 'Indie Flower', cursive;
 }
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'ul, ul'
+    'h1, h1'
+    'h2, h2'
+    'm, m'
+    'f, f';
+    height: 95vh;
+    width: 95vw;
+    gap: 5px;
+
+}
