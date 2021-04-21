@@ -37,8 +37,9 @@ header {
 
 }
 
-.section-header {
+main > .section-header {
     grid-area: h2;
+    width: 100%;
     background-color: #31748f;
     text-align: center;
     width: 100%;
@@ -68,17 +69,17 @@ footer {
 
 @media (min-width: 640px) {
     section {
-    grid-template-rows: 20px 300px 100px 20px;
-    grid-template-columns: auto auto auto;
-    grid-template-areas:
-      'h1, h1,  h1'
-      'h2, h2, h2'
-      'm, m, m'
-      'c, c, c'
-      'f, f, f';
-      gap: 5px;
-      height: 100vh;
-      width: 100vw;
+        grid-template-rows: 20px 300px 100px 20px;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        'h1, h1,  h1'
+        'h2, h2, h2'
+        'm, m, m'
+        'c, c, c'
+        'f, f, f';
+        gap: 5px;
+        height: 100vh;
+        width: 100vw;
     }
     
     header {
@@ -86,8 +87,9 @@ footer {
         text-align: center;
     
     }
-    .section-header {
+    main > .section-header {
         grid-area: h2;
+        width: 100%;
         text-align: center;
     }
 
