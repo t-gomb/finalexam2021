@@ -1,6 +1,7 @@
 * {
     font-family: 'RocknRoll One', sans-serif;
-    
+    padding: 2px;
+    margin: 0px;
 }
 
 h1 {
@@ -30,6 +31,7 @@ body {
 
 header {
     grid-area: h1;
+    width: 100%;
     text-align: center;
     background-color: #31748f;
 
@@ -47,8 +49,13 @@ header {
 
 }
 
-.cart {
+.wrapper > .cart {
     grid-area: c;
+    width: 100%;
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    background-color: #e0def4;
 
 }
 
@@ -61,8 +68,8 @@ footer {
 
 @media (min-width: 640px) {
     section {
-    grid-template-rows: 5rem 1fr 5rem;
-    grid-template-columns: 250px 1fr;
+    grid-template-rows: 20px 300px 100px 20px;
+    grid-template-columns: auto auto auto;
     grid-template-areas:
       'h1, h1,  h1'
       'h2, h2, h2'
@@ -89,10 +96,14 @@ footer {
     
     }
 
-    .cart {
+    .wrapper > .cart {
         grid-area: c;
+        width: 100%;
+        position: absolute;
         align-self: center;
-        
+        text-align: center;
+        background-color: #e0def4;
+    
     }
 
     footer {
